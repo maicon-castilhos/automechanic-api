@@ -181,5 +181,4 @@ json
     "valorUnitario": 80.00
 }
 
-🧑‍💻 Autor
-Desenvolvido por Maicon Amaral.
+🧑‍💻 Desenvolvido por Maicon Amaral.
