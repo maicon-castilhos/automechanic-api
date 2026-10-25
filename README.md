@@ -18,7 +18,7 @@ O projeto foi construído aplicando as melhores práticas do ecossistema Spring,
 - **Documentação de API:** Postman (testes manuais)
 
 ---
-🔌 Endpoints da API
+##🔌 Endpoints da API
 Abaixo estão os endpoints disponíveis na API. Todos os retornos são em formato JSON.
 
 Cliente	GET	/clientes	Lista todos os clientes
@@ -62,7 +62,7 @@ DELETE	/ordens/{id}	Remove uma OS
 Item da OS	POST	/ordens/{id}/itens	Adiciona peça/serviço a uma OS
 
 
-⚙️ Como Rodar o Projeto
+##⚙️ Como Rodar o Projeto
 
 Pré-requisitos:
 
@@ -73,12 +73,12 @@ Maven instalado.
 Postman ou Insomnia (para testar a API).
 
 
-1. Clonar o repositório
+###1. Clonar o repositório
 bash
 git clone https://github.com/maicon-castilhos/automechanic-api.git
 cd automechanic-api
 
-2. Rodar com H2 (Ambiente de Teste/Desenvolvimento)
+###2. Rodar com H2 (Ambiente de Teste/Desenvolvimento)
 O projeto já está configurado para usar o banco em memória H2 por padrão. Isso significa que você não precisa instalar nenhum banco de dados para testar.
 
 bash
@@ -96,7 +96,7 @@ Password: (deixe em branco)
 Nota: A classe TestConfig populará o banco automaticamente com dados fictícios (Clientes, Veículos, OS) toda vez que a aplicação iniciar com este perfil.
 
 
-3. Rodar com PostgreSQL (Ambiente de Produção)
+###3. Rodar com PostgreSQL (Ambiente de Produção)
 Para rodar com o banco real, você precisa ter o PostgreSQL instalado e um banco chamado automechanic_db criado.
 
 Altere o arquivo src/main/resources/application.properties:
@@ -115,7 +115,7 @@ mvn spring-boot:run -Dspring-boot.run.profiles=prod
 
 (Ou rode o .jar gerado com java -jar target/automechanic-api.jar --spring.profiles.active=prod).
 
-🧪 Exemplos de JSON (Para testes no Postman)
+##🧪 Exemplos de JSON (Para testes no Postman)
 
 1. POST /clientes (Criar Cliente)
 
@@ -181,4 +181,4 @@ json
     "valorUnitario": 80.00
 }
 
-🧑‍💻 Desenvolvido por Maicon Amaral.
+###🧑‍💻 Desenvolvido por Maicon Amaral.
