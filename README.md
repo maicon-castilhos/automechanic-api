@@ -61,18 +61,23 @@ DELETE	/ordens/{id}	Remove uma OS
 
 Item da OS	POST	/ordens/{id}/itens	Adiciona peça/serviço a uma OS
 
+
 ⚙️ Como Rodar o Projeto
-Pré-requisitos
+
+Pré-requisitos:
+
 Java 25 (JDK) instalado.
 
 Maven instalado.
 
 Postman ou Insomnia (para testar a API).
 
+
 1. Clonar o repositório
 bash
 git clone https://github.com/maicon-castilhos/automechanic-api.git
 cd automechanic-api
+
 2. Rodar com H2 (Ambiente de Teste/Desenvolvimento)
 O projeto já está configurado para usar o banco em memória H2 por padrão. Isso significa que você não precisa instalar nenhum banco de dados para testar.
 
@@ -90,6 +95,7 @@ Password: (deixe em branco)
 
 Nota: A classe TestConfig populará o banco automaticamente com dados fictícios (Clientes, Veículos, OS) toda vez que a aplicação iniciar com este perfil.
 
+
 3. Rodar com PostgreSQL (Ambiente de Produção)
 Para rodar com o banco real, você precisa ter o PostgreSQL instalado e um banco chamado automechanic_db criado.
 
@@ -97,15 +103,20 @@ Altere o arquivo src/main/resources/application.properties:
 
 properties
 spring.profiles.active=prod
+
 Certifique-se de que o arquivo application-prod.properties está com as suas credenciais (usuário e senha do PostgreSQL).
 
 Rode a aplicação passando o argumento de perfil:
 
+
 bash
+
 mvn spring-boot:run -Dspring-boot.run.profiles=prod
+
 (Ou rode o .jar gerado com java -jar target/automechanic-api.jar --spring.profiles.active=prod).
 
 🧪 Exemplos de JSON (Para testes no Postman)
+
 1. POST /clientes (Criar Cliente)
 
 json
@@ -115,6 +126,7 @@ json
     "telefone": "99999-9999",
     "email": "joao@email.com"
 }
+
 2. POST /veiculos (Criar Veículo)
 
 json
@@ -129,6 +141,7 @@ json
         "id": 3
     }
 }
+
 3. POST /pecas (Criar Peça)
 
 json
@@ -138,6 +151,7 @@ json
     "fabricante": "Bosch",
     "precoVenda": 80.00
 }
+
 4. POST /ordens (Abrir Ordem de Serviço)
 
 json
@@ -155,6 +169,7 @@ json
         "id": 3
     }
 }
+
 5. POST /ordens/{id}/itens (Adicionar Item à OS)
 (Lembre-se de trocar o {id} na URL pelo ID da OS criada acima)
 
@@ -165,5 +180,6 @@ json
     "quantidade": 1.00,
     "valorUnitario": 80.00
 }
+
 🧑‍💻 Autor
 Desenvolvido por Maicon Amaral.
