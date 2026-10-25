@@ -21,7 +21,6 @@ O projeto foi construído aplicando as melhores práticas do ecossistema Spring,
 🔌 Endpoints da API
 Abaixo estão os endpoints disponíveis na API. Todos os retornos são em formato JSON.
 
-Entidade	Método	Rota	Descrição
 Cliente	GET	/clientes	Lista todos os clientes
 GET	/clientes/{id}	Busca cliente por ID
 POST	/clientes	Cadastra um novo cliente
@@ -42,6 +41,7 @@ POST	/ordens	Abre uma nova OS
 PUT	/ordens/{id}	Atualiza dados da OS
 DELETE	/ordens/{id}	Remove uma OS
 Item da OS	POST	/ordens/{id}/itens	Adiciona peça/serviço a uma OS
+
 ⚙️ Como Rodar o Projeto
 Pré-requisitos
 Java 25 (JDK) instalado.
