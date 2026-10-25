@@ -22,24 +22,43 @@ O projeto foi construído aplicando as melhores práticas do ecossistema Spring,
 Abaixo estão os endpoints disponíveis na API. Todos os retornos são em formato JSON.
 
 Cliente	GET	/clientes	Lista todos os clientes
+
 GET	/clientes/{id}	Busca cliente por ID
+
 POST	/clientes	Cadastra um novo cliente
+
 PUT	/clientes/{id}	Atualiza um cliente
+
 DELETE	/clientes/{id}	Remove um cliente
+
 Veículo	GET	/veiculos	Lista todos os veículos
+
 GET	/veiculos/{id}	Busca veículo por ID
+
 POST	/veiculos	Cadastra um novo veículo
+
 PUT	/veiculos/{id}	Atualiza um veículo
+
 DELETE	/veiculos/{id}	Remove um veículo
+
 Peça	GET	/pecas	Lista o catálogo de peças
+
 POST	/pecas	Cadastra uma nova peça
+
 Serviço	GET	/servicos	Lista o catálogo de serviços
+
 POST	/servicos	Cadastra um novo serviço
+
 Ordem Serviço	GET	/ordens	Lista todas as OS
+
 GET	/ordens/{id}	Busca OS por ID (inclui valor total)
+
 POST	/ordens	Abre uma nova OS
+
 PUT	/ordens/{id}	Atualiza dados da OS
+
 DELETE	/ordens/{id}	Remove uma OS
+
 Item da OS	POST	/ordens/{id}/itens	Adiciona peça/serviço a uma OS
 
 ⚙️ Como Rodar o Projeto
